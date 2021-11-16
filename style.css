@@ -1,0 +1,111 @@
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+
+.text-top {
+    text-align: center!important;
+}
+
+.collapsing {
+    transition: height .5s ease;
+}
+
+.row {
+    --bs-gutter-x: none;
+    --bs-gutter-y: none;
+    margin: -1px 0;
+    padding: 4px 0;
+}
+
+.card {    
+    background-color: rgb(255, 223, 116);
+}
+
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-info {
+    background-color: rgb(146, 70, 0);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.btn-info:hover {
+    background-color: rgb(212, 103, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(146, 70, 0);
+}
+
+.btn-success {
+    background-color: rgb(0, 156, 13);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.1s;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 5px ridge white;
+}
+
+.btn-success:hover {
+    background-color: rgb(30, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 5px ridge rgb(0, 156, 13);
+}
+
+#btnStart {
+    background-color: rgb(255, 123, 0);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+#btnStart:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 123, 0);
+    border: 2px solid rgb(255, 123, 0);
+}
+
+.Phrase {
+    background-color: rgb(255, 111, 111);
+}
+
+p {
+    margin: 0;
+}
+
+.inputArea {
+    position: relative;
+    left: calc(50% - 170px);
+    width: 340px;
+    border : 2px ridge rgb(107, 107, 107);
+    border-radius: 15px;
+}
+
+.card-header {
+    background-color: rgb(255, 167, 67);
+}
+
+.card-footer {
+    background-color: rgb(255, 167, 67);
+}
+
+#btnRetry {
+    background-color: rgb(255, 123, 0);
+    color: rgb(0, 0, 0);
+    transition-duration: 0.2s;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 10px groove white;
+    text-decoration: none;
+}
+#btnRetry:hover {
+    color: #000000;
+    border: 10px groove #a76400;
+}

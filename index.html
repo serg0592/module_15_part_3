@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-4 offset-md-4">
+            <div class="card text-top">
+                <div class="collapse show">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-success btn-lg collapse show" id="btnStart"
+                                data-bs-toggle="collapse" data-bs-target=".collapse">Начать игру!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse show" id="hideInput">
+                    <div class="row">
+                        <div class="col">
+                            <div class="inputArea">
+                                <div class="row">
+                                    <div class="col">
+                                        <span>Минимальное значение</span>
+                                        <input class="inputMin" type="text" placeholder="0" size="5">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <span>Максимальное значение</span>
+                                        <input class="inputMax" type="text" placeholder="100" size="5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse2 show" id="hidePhrase">
+                    <div class="row no-gutters">
+                        <div class="col col-Phrase">
+                            <p class = "Phrase">Введите значения и нажмите "Начать игру!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <p class="m-0"><span id="orderText">Вопрос №</span><span id="orderNumberField"></span></p>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <h3 class="card-title m-0"><span id="answerField">...</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="btn-group">
+                                <button class="btn btn-info" id="btnLess">меньше</button>
+                                <button class="btn btn-info" id="btnOver">больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-link" id="btnRetry" 
+                            data-bs-toggle="collapse" data-bs-target=".collapse" 
+                            aria-expanded="true" aria-controls="hideInput hidePhrase">Заново
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
